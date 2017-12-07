@@ -1,4 +1,4 @@
-# RISC-V device tree documentation
+# RISC-V device tree documentation [![(build status)](https://travis-ci.org/riscv/riscv-device-tree-doc.svg?branch=master)](https://travis-ci.org/riscv/riscv-device-tree-doc)
 
 This repository is a collection of [device tree][dt] bindings, for RISC-V
 emulators and hardware.
