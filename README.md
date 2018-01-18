@@ -20,6 +20,20 @@ node.
 - Make a pull request
 
 
+## Checking consistency with Linux
+
+If you want to check the devicetree bindings in this repo against those in
+Linux's `Documentation/devicetree/bindings` directory, there's [a script] for
+that. You can use it like this:
+
+```sh
+scripts/check-against-linux.py bindings \
+                               /path/to/linux/Documentation/devicetree/bindings
+```
+
+Note that [Travis-CI] runs this script on every commit and pull request.
+
+
 ## License
 
 [GPLv2], unless stated otherwise. This ensures that binding files can be
@@ -30,4 +44,6 @@ exchanged between Linux and this repository without issues.
 [bindings directory]: bindings
 [linux-bindings]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/devicetree/bindings
 [vendor-prefixes.txt]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/devicetree/bindings/vendor-prefixes.txt
+[a script]: scripts/check-against-linux.py
+[Travis-CI]: https://travis-ci.org/riscv/riscv-device-tree-doc
 [GPLv2]: GPL-2.0.license
