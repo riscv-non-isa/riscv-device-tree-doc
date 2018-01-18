@@ -13,6 +13,8 @@ node.
 - If your binding is already present in Linux's
   [Documentation/devicetree/bindings][linux-bindings] directory, make sure you
   use the same file name and relative path.
+- If your binding is not present in Linux, add its name (including the path
+  leading up to it) to [bindings/not-in-linux.txt].
 - If your vendor prefix is not yet in [vendor-prefixes.txt], make sure to add
   it as soon as possible to avoid collisions and inconsistencies.
 - Make a pull request

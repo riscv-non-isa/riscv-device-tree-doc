@@ -1,0 +1,4 @@
+# This file should list all files that are present in this bindings directory,
+# but not in Linux's. check-against-linux.py can check its correctness.
+
+not-in-linux.txt
