@@ -94,7 +94,7 @@ def usage(program):
     print("This program checks the RISC-V device tree bindings repository")
     print("against the device tree bindings in the Linux source tree.")
     print("")
-    print("Usage: %s OUR-BINDINGS LINUX-BINDINGS")
+    print("Usage: %s OUR-BINDINGS LINUX-BINDINGS" % sys.argv[0])
     print("")
     print("   OUR-BINDINGS: \"Our\" bindings directory")
     print(" LINUX-BINDINGS: Linux's bindings directory (Documentation/devicetree/bindings)")
